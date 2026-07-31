@@ -1,0 +1,20 @@
+﻿# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Models (large files)
+models/*.h5
+models/*.npy
+models/*.pkl
+models/final_model_savedmodel/
+
+# Keep only these model files
+!models/model_int8.tflite
+!models/model_info.json
+
+# Dataset audio files
+dataset/*/*.wav
+
+# Temp files
+*.tmp

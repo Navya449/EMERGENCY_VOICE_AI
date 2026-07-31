@@ -5,12 +5,3 @@ __pycache__/
 "@ | Out-File -FilePath .gitignore -Encoding UTF8
 
 git rm -r --cached .venv
-git add .gitignore
-git add training_scripts/
-git add models/model_int8.tflite
-git add models/model_info.json
-git add esp32_code/
-git add dataset/.gitkeep
-git add requirements.txt
-git commit -m "KWS pipeline: training scripts, INT8 model, ESP32 header"
-git push origin main --force
